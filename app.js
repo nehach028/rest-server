@@ -7,9 +7,24 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
+const sampleReq = require('./request.json')
 
 const port = process.env.PORT || 8000
 app.use(bodyParser.json());
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    "message": "This is a rest api to render json response ",
+    "example":  sampleReq
+  })
+})
+
+app.get('/v1/results', (req, res) => {
+  res.status(200).json({
+    "message": "This is a rest api to render json response ",
+    "example":  sampleReq
+  })
+})
 
 app.post('/v1/results', (req, res) => {
   
