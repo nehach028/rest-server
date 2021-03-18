@@ -2,8 +2,8 @@
 A rest api server that process JSON request and send JSON response.If request body is not valid json send error json as response 
 
 
-# REST API example application
-The REST API app is described below.
+# REST API application
+The REST API app is described below.The request header Content-Type: application/json needs to be selected. 
 
 ## POST Json request
 
