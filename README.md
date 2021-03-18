@@ -1,9 +1,26 @@
-# REST API:  rest-server 
-A rest api server that process JSON request and send JSON response.If request body is not valid json send error json as response 
+# REST API:  rest-server
 
+A rest api server that process JSON request/response.If request body is not valid json, it sends error message into json response 
 
-# REST API application
-The REST API app is described below.The request header Content-Type: application/json needs to be selected. 
+## Requirments
+
+The application was created with node js/express and javascript and requires node and yarn
+
+## TL;DR
+
+To get it installed and launched:
+
+* Download or Clone the Repository
+* Install all dependencies with `yarn install`
+* Start the server with `node app.js`
+* After starting the server hit the URL:http://localhost:8000/v1/resultsuse into any rest api tool
+* To post a request use any restapi tool ex: postman or RESTClient
+* Example request and response can be found at : [request](https://github.com/nehach028/rest-server/blob/master/request.json) and [response](https://github.com/nehach028/rest-server/blob/master/response.json)
+* To test applicaion run : `yarn run test`
+
+## REST API routes
+
+The REST API app is described below.The request header Content-Type: application/json needs to be selected.
 
 ## POST Json request
 
@@ -278,5 +295,7 @@ The REST API app is described below.The request header Content-Type: application
 
     {"error":"Could not decode request: JSON parsing fail"}
 
+## Test API
 
+    To test api developed test cases using jest testing framwork.
 
