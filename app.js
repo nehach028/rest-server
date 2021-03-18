@@ -28,7 +28,7 @@ app.use((err, req, res, next) => {
 
 app.get('/', (req, res) => {
   return res.status(200).json({
-    "message": "This is a rest api to render json response ",
+    "message": "This is a rest api to render json response",
     "example": sampleReq
   })
 })
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 app.get('/v1/results', (req, res) => {
   if (req)
     return res.status(200).json({
-      "message": "This is a rest api to render json response ",
+      "message": "This is a rest api to render json response",
       "example": sampleReq
     })
 })
@@ -70,3 +70,5 @@ app.post('/v1/results', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+module.exports = app
